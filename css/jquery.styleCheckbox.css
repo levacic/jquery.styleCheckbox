@@ -1,0 +1,36 @@
+/**
+ * Styles for the jQuery.styleCheckbox plugin
+ *
+ * Written in SCSS syntax, to be compiled with the Sass compiler:
+ * http://sass-lang.com
+ *
+ * Usually, you'll only want to edit
+ */
+/**
+ * Most of the time it won't be necessary to edit below this line, unless, for
+ * some reason, you wish to change the class names, or the positions of the
+ * different checkbox states within the sprite.
+ */
+/* Class names */
+/* Sprite positions */
+div.styled-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: transparent url("jquery.styleCheckbox.png") 0px 0px no-repeat;
+  cursor: pointer;
+  outline: none; }
+  div.styled-checkbox:hover {
+    background-position: 0px -16px; }
+  div.styled-checkbox.styled-checkbox-focus {
+    background-position: 0px -16px; }
+  div.styled-checkbox.styled-checkbox-active {
+    background-position: 0px -32px; }
+  div.styled-checkbox.styled-checkbox-checked {
+    background-position: 0px -48px; }
+    div.styled-checkbox.styled-checkbox-checked:hover {
+      background-position: 0px -64px; }
+    div.styled-checkbox.styled-checkbox-checked.styled-checkbox-focus {
+      background-position: 0px -64px; }
+    div.styled-checkbox.styled-checkbox-checked.styled-checkbox-active {
+      background-position: 0px -80px; }

@@ -1,0 +1,75 @@
+/**
+ * Styles for the jQuery.styleCheckbox plugin
+ *
+ * Written in SCSS syntax, to be compiled with the Sass compiler:
+ * http://sass-lang.com
+ *
+ * Usually, you'll only want to edit
+ */
+
+$styled-checkbox-width: 16px;
+$styled-checkbox-height: 16px;
+$styled-checkbox-sprite: "jquery.styleCheckbox.png";
+$styled-checkbox-class: "styled-checkbox";
+
+/**
+ * Most of the time it won't be necessary to edit below this line, unless, for
+ * some reason, you wish to change the class names, or the positions of the
+ * different checkbox states within the sprite.
+ */
+
+/* Class names */
+$styled-checkbox-class-focus: #{$styled-checkbox-class}-focus;
+$styled-checkbox-class-active: #{$styled-checkbox-class}-active;
+$styled-checkbox-class-checked: #{$styled-checkbox-class}-checked;
+
+/* Sprite positions */
+$styled-checkbox-normal: 0 * $styled-checkbox-height;
+$styled-checkbox-normal-hover: 1 * $styled-checkbox-height;
+$styled-checkbox-normal-focus: 1 * $styled-checkbox-height;
+$styled-checkbox-normal-active: 2 * $styled-checkbox-height;
+$styled-checkbox-checked: 3 * $styled-checkbox-height;
+$styled-checkbox-checked-hover: 4 * $styled-checkbox-height;
+$styled-checkbox-checked-focus: 4 * $styled-checkbox-height;
+$styled-checkbox-checked-active: 5 * $styled-checkbox-height;
+
+div.#{$styled-checkbox-class} {
+	display:				inline-block;
+
+	width:					$styled-checkbox-width;
+	height:					$styled-checkbox-height;
+
+	background:				transparent url($styled-checkbox-sprite) 0px (-$styled-checkbox-normal) no-repeat;
+
+	cursor:					pointer;
+
+	outline:				none;
+
+	&:hover {
+		background-position:	0px (-$styled-checkbox-normal-hover);
+	}
+
+	&.#{$styled-checkbox-class-focus} {
+		background-position:	0px (-$styled-checkbox-normal-focus);
+	}
+
+	&.#{$styled-checkbox-class-active} {
+		background-position:	0px (-$styled-checkbox-normal-active);
+	}
+
+	&.#{$styled-checkbox-class-checked} {
+		background-position:	0px (-$styled-checkbox-checked);
+
+		&:hover {
+			background-position:	0px (-$styled-checkbox-checked-hover);
+		}
+
+		&.#{$styled-checkbox-class-focus} {
+			background-position:	0px (-$styled-checkbox-checked-focus);
+		}
+
+		&.#{$styled-checkbox-class-active} {
+			background-position:	0px (-$styled-checkbox-checked-active);
+		}
+	}
+}
