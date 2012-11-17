@@ -5,13 +5,13 @@ This is my first release of a light-weight jQuery plugin for styling checkboxes.
 
 The basic usage to initialize the plugin is:
 
-```
+```js
 $( "input:checkbox" ).styleCheckbox();
 ```
 
 If you wish to turn it off, use:
 
-```
+```js
 $( "input:checkbox" ).styleCheckbox( "destroy" );
 ```
 
@@ -19,7 +19,7 @@ You may also call it on individual elements, you don't have to style all the che
 
 The plugin accepts optional settings:
 
-```
+```js
 $( "input:checkbox" ).styleCheckbox({
 	replacementClass: "styled-checkbox",
 	focusClass: "styled-checkbox-focus",
