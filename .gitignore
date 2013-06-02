@@ -1,0 +1,11 @@
+# Sublime Text project and workspace files
+*.sublime-*
+
+# NodeJS modules installed with `npm` - this
+node_modules/*
+
+# SASS cached files
+.sass-cache/*
+
+# The resources folder
+resources/*
