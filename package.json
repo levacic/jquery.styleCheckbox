@@ -1,11 +1,25 @@
 {
   "name": "jquery.styleCheckbox",
+  "description": "A simple-to-use jQuery plugin for styling checkboxes.",
   "version": "1.0.0",
+  "homepage": "https://github.com/levacic/jquery.styleCheckbox",
+  "author": {
+    "name": "Miloš Levačić",
+    "url": "http://levacic.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/levacic/jquery.styleCheckbox"
+  },
+  "bugs": {
+    "url": "https://github.com/levacic/jquery.styleCheckbox/issues"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-sass": "~0.3.0",
     "grunt-contrib-jshint": "~0.5.4",
     "grunt-contrib-uglify": "~0.2.2",
     "grunt-contrib-watch": "~0.4.4"
-  }
+  },
+  "readmeFilename": "README.md"
 }
