@@ -1,7 +1,7 @@
 {
   "name": "jquery.styleCheckbox",
   "description": "A simple-to-use jQuery plugin for styling checkboxes.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/levacic/jquery.styleCheckbox",
   "author": {
     "name": "Miloš Levačić",
